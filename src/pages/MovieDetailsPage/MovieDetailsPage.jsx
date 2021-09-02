@@ -1,13 +1,13 @@
 import { useState, useEffect } from "react";
 import { useParams, Redirect } from "react-router-dom";
 import toast from "react-hot-toast";
-import { fetchMoviesDetails } from "services/fetchMoviesAPI";
+import { fetchMoviesDetails } from "../../services/fetchMoviesAPI";
 import { IMG_URL } from "../../constants/movieAPI";
-import { Status } from "constants/status.js";
+import { Status } from "../../constants/status.js";
 import Spinner from "../../components/Spinner/Spinner";
 import GoBackBtn from "../../components/GoBackBtn/GoBackBtn";
 import MovieDetailsNav from "../../components/MovieDetailsNav/MovieDetailsNav";
-import defaultImage from "images/defaultImage.jpg";
+// import defaultImage from "images/defaultImage.jpg";
 import {
   CardWrap,
   CardImg,
@@ -15,7 +15,7 @@ import {
   Title,
   Details,
   CardContainer,
-} from "pages/MovieDetailsPage/MovieDetailsPage.styled";
+} from "./MovieDetailsPage.styled";
 
 function MovieDetailsPage(props) {
   const { movieId } = useParams();
@@ -38,8 +38,8 @@ function MovieDetailsPage(props) {
   const poster =
     movie && movie.poster_path
       ? `${IMG_URL}${movie.poster_path}`
-      : defaultImage;
-
+      :"" ;
+// defaultImage
   return (
     <>
       {status === Status.PENDING && <Spinner />}

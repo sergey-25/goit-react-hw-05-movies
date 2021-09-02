@@ -9,7 +9,6 @@ export const ContentWrap = styled.div`
 export const ImgReviewer = styled.img`
   width: 80px;
   height: 80px;
-  border-radius: 10px;
   margin-right: 10px;
 `;
 
@@ -23,7 +22,7 @@ export const ReviewItem = styled.li`
 export const ReviewerName = styled.h2`
   font-size: 16px;
   text-transform: capitalize;
-  color: #87cefa;
+  color: orange;
   line-height: 1.2;
   text-align: left;
   font-weight: 700;

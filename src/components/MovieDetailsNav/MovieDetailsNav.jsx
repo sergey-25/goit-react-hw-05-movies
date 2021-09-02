@@ -8,11 +8,11 @@ import {
 } from "./MovieDetailsNav.styled";
 
 const Cast = lazy(() =>
-  import("pages/Cast/Cast" )
+  import("../../pages/Cast/Cast" )
 );
 
 const Reviews = lazy(() =>
-  import("pages/Reviews/Reviews" )
+  import("../../pages/Reviews/Reviews" )
 );
 
 function MovieDetailsNav({ movie }) {
@@ -25,8 +25,8 @@ function MovieDetailsNav({ movie }) {
           <NavLinkStyled
             to={{ pathname: `${url}/cast`, state: { from: location } }}
             activeStyle={{
-              color: "#9966cc",
-              borderBottom: "3px solid #87cefa",
+              color: "black",
+              borderBottom: "3px solid orange",
             }}
           >
             Cast
@@ -36,8 +36,8 @@ function MovieDetailsNav({ movie }) {
           <NavLinkStyled
             to={{ pathname: `${url}/reviews`, state: { from: location } }}
             activeStyle={{
-              color: "#9966cc",
-              borderBottom: "3px solid #87cefa",
+              color: "black",
+              borderBottom: "3px solid orange",
             }}
           >
             Reviews

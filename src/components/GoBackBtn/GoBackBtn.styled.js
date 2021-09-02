@@ -14,13 +14,14 @@ export const Btn = styled.button`
   height: 40px;
   font-size: 18px;
   font-weight: 700;
-  background-color: #87cefa;
-  border-radius: 5px;
+  color:black;
+   outline: none;
+    border: none;
   cursor: pointer;
-  color: white;
-  &:hover,
-  &:focus {
-    background-color: #e0ffff;
-    color: #9966cc;
-  }
+ 
+
+   &:focus {
+     background-color: #fff;
+     color: black;
+   }
 `;

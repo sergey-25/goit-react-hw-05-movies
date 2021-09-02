@@ -9,7 +9,7 @@ export const Нeader = styled.header`
   box-shadow: rgba(188, 188, 235, 0.3) 0px 4px 16px,
     rgba(188, 188, 235, 0.3) 0px 8px 24px,
     rgba(188, 188, 235, 0.3) 0px 16px 56px;
-  background-color: #87cefa;
+  background-color: #fff;
   margin-bottom: 25px;
 `;
 
@@ -30,9 +30,9 @@ export const NavLinkStyled = styled(NavLink)`
   font-size: 22px;
   font-weight: 700;
   text-transform: uppercase;
-  color: #9966cc;
+  color: black;
   &:hover,
   &:focus {
-    color: #e0ffff;
+    color: black;
   }
 `;

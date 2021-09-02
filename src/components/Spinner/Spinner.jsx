@@ -5,8 +5,8 @@ function Spinner() {
   return (
     <LoaderContainer>
       <Loader
-        type="Audio"
-        color="#9966cc"
+        type="Oval"
+        color="black"
         height={120}
         width={120}
         timeout={5000}

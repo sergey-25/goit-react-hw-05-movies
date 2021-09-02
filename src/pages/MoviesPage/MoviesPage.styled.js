@@ -11,21 +11,23 @@ export const SearchForm = styled.form`
   display: flex;
   min-width: 600px;
   text-align: center;
-  border: 3px solid #87cefa;
-  border-radius: 7px;
+  border-radius:4px;
+  border: 1px solid orange;
+  
   overflow: hidden;
   & > input {
     width: 100%;
     padding-left: 8px;
     line-height: 1.2;
-    color: #9966cc;
-    background-color: #e0ffff;
+    color: black;
+    background-color: ;
     outline: none;
     border: none;
   }
   & > button {
     padding: 8px;
-    background-color: #87cefa;
+    border-radius:4px;
+    background-color: black;
     border: none;
     & > svg {
       display: flex;

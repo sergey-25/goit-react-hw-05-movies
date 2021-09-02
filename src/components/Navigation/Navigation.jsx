@@ -12,13 +12,13 @@ function Navigation() {
       <Container>
         <NavList>
           <NavListItem>
-            <NavLinkStyled exact to="/" activeStyle={{ color: "#9966cc" }}>
+            <NavLinkStyled exact to="/" activeStyle={{ color: "orange" }}>
               Home
             </NavLinkStyled>
           </NavListItem>
 
           <NavListItem>
-            <NavLinkStyled to="/movies" activeStyle={{ color: "#9966cc" }}>
+            <NavLinkStyled to="/movies" activeStyle={{ color: "orange" }}>
               Movies
             </NavLinkStyled>
           </NavListItem>

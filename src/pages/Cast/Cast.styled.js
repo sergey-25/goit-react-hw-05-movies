@@ -10,8 +10,6 @@ export const CastList = styled.ul`
     width: 160px;
     height: 100%;
     text-align: center;
-    border: 2px solid #87cefa;
-    border-radius: 5px;
     overflow: hidden;
   }
 `;

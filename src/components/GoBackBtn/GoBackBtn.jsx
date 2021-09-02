@@ -1,6 +1,6 @@
 import React from "react";
 import { useHistory, useLocation } from "react-router-dom";
-import { FaHandPointLeft } from "react-icons/fa";
+import { BiArrowBack } from "react-icons/bi";
 import { GoHome } from "react-icons/go";
 import { BtnWrap, Btn } from "./GoBackBtn.styled";
 
@@ -18,7 +18,7 @@ function GoBackBtn() {
         <GoHome />
       </Btn>
       <Btn onClick={handleClickGoBack}>
-        <FaHandPointLeft />
+        <BiArrowBack />
       </Btn>
     </BtnWrap>
   );

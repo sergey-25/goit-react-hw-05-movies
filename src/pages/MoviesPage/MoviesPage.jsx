@@ -3,12 +3,12 @@ import { useHistory, useLocation } from "react-router-dom";
 import toast from "react-hot-toast";
 import queryString from "query-string";
 import { FaSearch } from "react-icons/fa";
-import { fetchMoviesByQuery } from "services/fetchMoviesAPI";
+import { fetchMoviesByQuery } from "../../services/fetchMoviesAPI";
 import Spinner from "../../components/Spinner/Spinner";
 import MoviesList from "../../components/MoviesList/MoviesList";
 import Pagination from "../../components/Pagination/Pagination";
-import { Status } from "constants/status.js";
-import { SearchForm, FormWrap } from "pages/MoviesPage/MoviesPage.styled";
+import { Status } from "../../constants/status.js";
+import { SearchForm, FormWrap } from "./MoviesPage.styled";
 
 function MoviesPage() {
   const [movies, setMovies] = useState([]);

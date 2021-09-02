@@ -1,14 +1,14 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { IMG_URL } from "constants/movieAPI.js";
-import defaultImage from "images/defaultImage.jpg";
+import { IMG_URL } from "../../constants/movieAPI.js";
+// import defaultImage from "images/defaultImage.jpg";
 import {
   ContentWrap,
   ImgReviewer,
   ReviewItem,
   ReviewText,
   ReviewerName,
-} from "pages/Reviews/Reviews.styled";
+} from "./Reviews.styled";
 
 function Reviews({ movie }) {
   const reviews = movie.reviews.results;
@@ -29,7 +29,7 @@ function Reviews({ movie }) {
             return (
               <ReviewItem key={id}>
                 <ContentWrap>
-                  <ImgReviewer src={authorImg || defaultImage} alt={author} />
+                  <ImgReviewer src={authorImg || ""} alt={author} />
                   <ReviewerName>{author}</ReviewerName>
                 </ContentWrap>
                 <ReviewText>{content}</ReviewText>

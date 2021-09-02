@@ -3,9 +3,7 @@ import styled from "@emotion/styled/macro";
 export const CardContainer = styled.div`
   padding: 30px;
   margin-bottom: 40px;
-  border: 3px solid #87cefa;
-  background-color: white;
-  border-radius: 10px;
+  
 `;
 
 export const CardWrap = styled.div`
@@ -27,14 +25,14 @@ export const Title = styled.h2`
   margin-bottom: 7px;
   font-weight: 700;
   text-transform: uppercase;
-  color: #87cefa;
+  color: orange;
 `;
 
 export const Details = styled.p`
   font-size: 18px;
   margin-bottom: 5px;
   font-weight: 700;
-  color: #9966cc;
+  color: black;
   & > span {
     font-weight: 400;
     padding-left: 5px;

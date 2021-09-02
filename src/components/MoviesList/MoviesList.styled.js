@@ -10,7 +10,7 @@ export const MoviesGallery = styled.ul`
 export const MoviesItem = styled.li`
   display: flex;
   justify-content: center;
-  background-color: #e0ffff;
+  background-color: orange;
   border-radius: 5px;
   overflow: hidden;
   transition: 0.5s linear;
@@ -30,9 +30,10 @@ export const MovieTitle = styled.h2`
   padding: 10px;
   font-size: 16px;
   font-weight: 700;
-  color: #9966cc;
+  color: black;
 `;
 
 export const MoviePoster = styled.img`
   height: 360px;
+
 `;

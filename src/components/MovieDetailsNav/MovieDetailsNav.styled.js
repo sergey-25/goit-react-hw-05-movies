@@ -19,9 +19,9 @@ export const NavLinkStyled = styled(NavLink)`
   font-weight: 700;
   text-transform: uppercase;
   font-size: 20px;
-  color: #87cefa;
+  color:black;
   &:hover,
   &:focus {
-    color: #9966cc;
+    color:black ;
   }
 `;

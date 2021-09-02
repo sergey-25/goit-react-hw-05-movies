@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 import { IMG_URL } from "../../constants/movieAPI.js";
-import defaultImage from "images/defaultImage.jpg";
+// import defaultImage from "images/defaultImage.jpg";
 import {
   MoviesGallery,
   MoviesItem,
@@ -15,7 +15,7 @@ function MoviesList({ movies }) {
   return (
     <MoviesGallery>
       {movies.map(({ id, poster_path, title }) => {
-        const poster = poster_path ? `${IMG_URL}${poster_path}` : defaultImage;
+        const poster = poster_path ? `${IMG_URL}${poster_path}` : "";
 
         return (
           <MoviesItem key={id}>
