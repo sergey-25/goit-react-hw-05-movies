@@ -1,18 +1,18 @@
 import { lazy, Suspense } from "react";
 import { Route, Switch, useRouteMatch, useLocation } from "react-router-dom";
-import Spinner from "components/Spinner/Spinner";
+import Spinner from "../../components/Spinner/Spinner";
 import {
   DetailsSubNav,
   NavItem,
   NavLinkStyled,
-} from "components/MovieDetailsNav/MovieDetailsNav.styled";
+} from "./MovieDetailsNav.styled";
 
 const Cast = lazy(() =>
-  import("pages/Cast/Cast" /* webpackChunkName: "cast" */)
+  import("pages/Cast/Cast" )
 );
 
 const Reviews = lazy(() =>
-  import("pages/Reviews/Reviews" /* webpackChunkName: "reviews" */)
+  import("pages/Reviews/Reviews" )
 );
 
 function MovieDetailsNav({ movie }) {

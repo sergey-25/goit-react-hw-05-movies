@@ -1,28 +1,28 @@
-// import { lazy, Suspense } from "react";
-// import { Switch, Route, Redirect } from "react-router-dom";
-// import { Container } from "components/Container/Container.styled";
-// import Navigation from "components/Navigation/Navigation";
-// import Spinner from "components/Spinner/Spinner";
-// import Toast from "components/Toast/Toast";
+import { lazy, Suspense } from "react";
+import { Switch, Route, Redirect } from "react-router-dom";
+import { Container } from "./components/Container/Container.styled";
+import Navigation from "./components/Navigation/Navigation";
+import Spinner from "./components/Spinner/Spinner";
+import Toast from "./components/Toast/Toast";
 
-// const HomePage = lazy(() =>
-//   import("pages/HomePage/HomePage.jsx" /* webpackChunkName: "home" */)
-// );
+const HomePage = lazy(() =>
+  import("./pages/HomePage/HomePage.jsx" )
+);
 
-// const MoviesPage = lazy(() =>
-//   import("pages/MoviesPage/MoviesPage.jsx" /* webpackChunkName: "movie" */)
-// );
+const MoviesPage = lazy(() =>
+  import("./pages/MoviesPage/MoviesPage.jsx" )
+);
 
-// const MovieDetailsPage = lazy(() =>
-//   import(
-//     "pages/MovieDetailsPage/MovieDetailsPage.jsx" /* webpackChunkName: "movie-details" */
-//   )
-// );
+const MovieDetailsPage = lazy(() =>
+  import(
+    "./pages/MovieDetailsPage/MovieDetailsPage.jsx" 
+  )
+);
 
 function App() {
   return (
     <>
-      {/* <Navigation />
+      <Navigation />
       <Container>
         <Suspense fallback={<Spinner />}>
           <Switch>
@@ -42,8 +42,9 @@ function App() {
           </Switch>
         </Suspense>
         <Toast />
-      </Container> */}
+      </Container>
     </>
   );
 }
+
 export default App;

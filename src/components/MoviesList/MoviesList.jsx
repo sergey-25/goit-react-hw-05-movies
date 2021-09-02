@@ -1,13 +1,13 @@
 import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
-import { IMG_URL } from "constants/movieAPI.js";
+import { IMG_URL } from "../../constants/movieAPI.js";
 import defaultImage from "images/defaultImage.jpg";
 import {
   MoviesGallery,
   MoviesItem,
   MoviePoster,
   MovieTitle,
-} from "components/MoviesList/MoviesList.styled";
+} from "./MoviesList.styled";
 import PropTypes from "prop-types";
 
 function MoviesList({ movies }) {
